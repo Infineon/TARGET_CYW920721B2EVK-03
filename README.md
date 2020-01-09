@@ -13,7 +13,7 @@ The Cypress CYW920721B2EVK-03 Evaluation Kit enables you to evaluate and develop
 ### Kit Contents
 
 * CYW920721B2EVB-03 Evaluation board
-* CYW9BT Audio Arduino shield (pre-assembled on top of the CYW920721B2EVB-03 evaluation board)
+* CYW9BT Audio 2 Arduino shield (pre-assembled on top of the CYW920721B2EVB-03 evaluation board)
 * USB Standard-A to Micro-B cable
 * Power Adapter
 * Quick Start Guide

@@ -42,8 +42,8 @@ extern "C" {
 #define WICED_GET_PIN_FOR_IO(idx) (*(platform_gpio[(idx)].gpio))
 #define BUTTON_MFB_ENABLED 1U
 #define BUTTON_MFB WICED_P00
-#define ioss_0_pin_10_ENABLED 1U
-#define ioss_0_pin_10 WICED_P10
+#define TX_PU_ENABLED 1U
+#define TX_PU WICED_P10
 #define SPI_MISO_ENABLED 1U
 #define SPI_MISO WICED_P16
 #define SPI_SCK_ENABLED 1U
@@ -52,6 +52,8 @@ extern "C" {
 #define I2S_DI WICED_P01
 #define SPI_CS_ENABLED 1U
 #define SPI_CS WICED_P25
+#define RX_PU_ENABLED 1U
+#define RX_PU WICED_P26
 #define I2S_DO_ENABLED 1U
 #define I2S_DO WICED_P28
 #define SPI_MOSI_ENABLED 1U

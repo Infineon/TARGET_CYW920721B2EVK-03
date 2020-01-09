@@ -18,7 +18,7 @@
                     <Param id="InterruptEnable" value="false"/>
                     <Param id="InterruptTrigger" value="GPIO_EN_INT_RISING_EDGE"/>
                 </Block>
-                <Block location="ioss[0].pin[10]" alias="" template="20x19_pin" version="1.0">
+                <Block location="ioss[0].pin[10]" alias="TX_PU" template="20x19_pin" version="1.0">
                     <Param id="Type" value="PERIPHERAL"/>
                     <Param id="Index" value="0"/>
                     <Param id="DefaultState" value="GPIO_PIN_OUTPUT_LOW"/>
@@ -60,6 +60,15 @@
                     <Param id="DefaultState" value="GPIO_PIN_OUTPUT_LOW"/>
                     <Param id="Control" value="GPIO_INPUT_ENABLE"/>
                     <Param id="PullMode" value="GPIO_PULL_UP_DOWN_NONE"/>
+                    <Param id="InterruptEnable" value="false"/>
+                    <Param id="InterruptTrigger" value="GPIO_EN_INT_RISING_EDGE"/>
+                </Block>
+                <Block location="ioss[0].pin[26]" alias="RX_PU" template="20x19_pin" version="1.0">
+                    <Param id="Type" value="PERIPHERAL"/>
+                    <Param id="Index" value="2"/>
+                    <Param id="DefaultState" value="GPIO_PIN_OUTPUT_HIGH"/>
+                    <Param id="Control" value="GPIO_OUTPUT_ENABLE"/>
+                    <Param id="PullMode" value="GPIO_PULL_UP"/>
                     <Param id="InterruptEnable" value="false"/>
                     <Param id="InterruptTrigger" value="GPIO_EN_INT_RISING_EDGE"/>
                 </Block>
