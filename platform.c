@@ -54,14 +54,14 @@ platform_led_config_t platform_led_config[PLATFORM_LED_MAX] =
     /* Red */
     [PLATFORM_LED_1] =
     {
-        .gpio_pin = WICED_P26,
+        .gpio_pin = WICED_P28,
         .channel = PWM0,
         .invert = WICED_TRUE,
     },
-    /* Green */
+    /* CYW920721B2EVK-3 does not support LED2 */
     [PLATFORM_LED_2] =
     {
-        .gpio_pin = WICED_P27,
+        .gpio_pin = 0xffffffff,
         .channel = PWM1,
         .invert = WICED_TRUE,
     },
