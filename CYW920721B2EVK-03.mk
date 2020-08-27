@@ -44,11 +44,6 @@ CHIP_REV=B2
 BLD=A
 
 #
-# floating point and other device specific compiler flags
-#
-CY_CORE_CFLAGS+=-mfloat-abi=hard
-
-#
 # Define the features for this target
 #
 
