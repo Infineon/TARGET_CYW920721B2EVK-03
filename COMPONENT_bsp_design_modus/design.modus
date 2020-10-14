@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Design version="12" xmlns="http://cypress.com/xsd/cydesignfile_v3">
-    <ToolInfo version="2.1.0.1266"/>
+    <ToolInfo version="2.2.0.2801"/>
     <Devices>
         <Device mpn="CYW20721B2KUMLG">
             <BlockConfig>
@@ -54,7 +54,7 @@
                     </Personality>
                 </Block>
                 <Block location="ioss[0].pin[17]">
-                    <Alias value="SPI_SCK"/>
+                    <Alias value="SPI_CLK"/>
                     <Personality template="20x19_pin" version="1.0">
                         <Param id="Type" value="PERIPHERAL"/>
                         <Param id="Index" value="1"/>
@@ -126,10 +126,10 @@
                     </Personality>
                 </Block>
                 <Block location="ioss[0].pin[2]">
-                    <Alias value="BUTTON_VOLUME_DOWN"/>
+                    <Alias value="BUTTON_VOL_DN"/>
                     <Personality template="20x19_pin" version="1.0">
                         <Param id="Type" value="BUTTON"/>
-                        <Param id="Index" value="4"/>
+                        <Param id="Index" value="3"/>
                         <Param id="DefaultState" value="GPIO_PIN_OUTPUT_HIGH"/>
                         <Param id="PressedValue" value="GPIO_PIN_OUTPUT_LOW"/>
                         <Param id="Control" value="GPIO_INPUT_ENABLE"/>
@@ -178,7 +178,7 @@
                     <Alias value="BUTTON_CUSTOM"/>
                     <Personality template="20x19_pin" version="1.0">
                         <Param id="Type" value="BUTTON"/>
-                        <Param id="Index" value="3"/>
+                        <Param id="Index" value="4"/>
                         <Param id="DefaultState" value="GPIO_PIN_OUTPUT_HIGH"/>
                         <Param id="PressedValue" value="GPIO_PIN_OUTPUT_LOW"/>
                         <Param id="Control" value="GPIO_INPUT_ENABLE"/>
@@ -188,7 +188,7 @@
                     </Personality>
                 </Block>
                 <Block location="ioss[0].pin[6]">
-                    <Alias value="BUTTON_VOLUME_UP"/>
+                    <Alias value="BUTTON_VOL_UP"/>
                     <Personality template="20x19_pin" version="1.0">
                         <Param id="Type" value="BUTTON"/>
                         <Param id="Index" value="2"/>

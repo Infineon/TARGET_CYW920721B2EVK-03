@@ -54,6 +54,7 @@ typedef enum
     WICED_PLATFORM_BUTTON_MAX //!< Max button for error check
 } wiced_platform_button_number_t;
 
+#define WICED_PLATFORM_BUTTON_MAX_DEF     4   // define for preprocessor
 
 //! Number of GPIO available on the platform.
 // Configurable via SuperMux
@@ -160,12 +161,18 @@ wiced_platform_gpio_config_t;
 #define WICED_GPIO_BUTTON_SETTINGS(x)                       ( GPIO_INPUT_ENABLE | GPIO_PULL_UP | x )
 
 /*! pin for LED 1 */
-#define WICED_GPIO_PIN_LED_1     WICED_P25
+#define WICED_GPIO_PIN_LED_1     WICED_P27
 /*! pin for LED 2 */
-#define WICED_GPIO_PIN_LED_2     WICED_P29
+#define WICED_GPIO_PIN_LED_2     WICED_P26
 
 #define WICED_PUART_TXD          WICED_P32
-#define WICED_PUART_RXD          WICED_P37
+#define WICED_PUART_RXD          WICED_P33
+
+#define WICED_BUTTON1 (WICED_P04)
+#define WICED_BUTTON2 (WICED_P06)
+#define WICED_BUTTON3 (WICED_P02)
+#define WICED_BUTTON4 (WICED_P00)
+#define WICED_RESET_PIN WICED_P34
 
 /* Platform function */
 void     wiced_platform_init(void);
